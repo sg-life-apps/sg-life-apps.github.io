@@ -29,21 +29,30 @@
     <h2>Data We Collect</h2>
     <p><strong>Location Data:</strong> The App requests access to your device's location solely to find nearby bus stops. Location data is processed on your device only and is never transmitted to our servers or any third party.</p>
     <p><strong>Favorites:</strong> Your saved favorite bus stops are stored locally on your device using the app's local database. This data is never uploaded or shared.</p>
-    <p><strong>No Personal Data:</strong> We do not collect, store, or transmit any personal information such as your name, email address, phone number, or device identifiers.</p>
+    <p><strong>No Personal Data:</strong> We do not collect, store, or transmit any personal information such as your name, email address or phone number. The Google Maps SDK used to display maps collects some data on its own; see <a href="#google-maps">Google Maps</a> below.</p>
 
     <h2>Third-Party Services</h2>
     <p>Bus data comes from the <a href="https://datamall.lta.gov.sg">Land Transport Authority (LTA) DataMall API</a>. The App does not contact LTA directly: it sends requests to our own SG Life API, hosted on <a href="https://vercel.com">Vercel</a> in Singapore, which fetches the data from LTA and caches it.</p>
     <p>Requests to our API contain only what is needed to answer them, such as the bus stop code or bus service you are viewing. They never include your location or any personal data. Like every internet request, they also carry your device's IP address. We use it only to deliver the response and to rate-limit abusive traffic. Our hosting provider keeps standard request logs, including IP addresses, for a limited period for security and operations. We do not combine this with any other data.</p>
+    <h3 id="google-maps">Google Maps</h3>
+    <p>Maps in the App (bus routes, nearby stops and stop locations) are provided by the Google Maps SDK for iOS and Android. When a map is shown, the SDK connects directly to Google and, according to Google's own disclosures, collects:</p>
+    <ul>
+        <li>a device or app-instance identifier,</li>
+        <li>diagnostic data (crash and performance data),</li>
+        <li>usage data about how you interact with the map, and</li>
+        <li>technical request data such as your IP address and the App's name and version.</li>
+    </ul>
+    <p>Google uses this data for analytics, abuse prevention and to provide the map. It is not used for advertising or to track you across other companies' apps, and we do not receive it. Your location is not sent to Google by the App; when you show your position on a map, the blue dot is drawn on your device. Google's handling of this data is governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
     <p>Please refer to <a href="https://datamall.lta.gov.sg/content/datamall/en/TermsOfUse.html">LTA's Terms of Use</a> and <a href="https://vercel.com/legal/privacy-policy">Vercel's Privacy Policy</a> for their data policies.</p>
 
     <h2>Advertising and Tracking</h2>
-    <p>The App contains <strong>no advertisements</strong> and <strong>no third-party analytics or tracking</strong> SDKs. We do not use cookies, pixels, or any other tracking mechanisms.</p>
+    <p>The App contains <strong>no advertisements</strong> and <strong>no tracking</strong>. We do not add any analytics SDK, cookies, pixels or other tracking mechanisms of our own. The only third-party SDK is Google Maps, described above, which collects limited data for Google's analytics and abuse prevention and does not track you for advertising.</p>
 
     <h2>Data Storage</h2>
     <p>All app data (cached bus stop information, favorites) is stored locally on your device. Our API server does not store any user data in a database. Uninstalling the App removes all associated data from your device.</p>
 
     <h2>Children's Privacy</h2>
-    <p>The App does not collect any personal information from anyone, including children under the age of 13.</p>
+    <p>We do not collect any personal information from anyone, including children under the age of 13. The limited data collected by the Google Maps SDK is described above.</p>
 
     <h2>Changes to This Policy</h2>
     <p>We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated revision date.</p>
